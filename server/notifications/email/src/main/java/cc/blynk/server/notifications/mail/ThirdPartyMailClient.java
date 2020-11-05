@@ -1,7 +1,6 @@
 package cc.blynk.server.notifications.mail;
 
 import cc.blynk.utils.properties.MailProperties;
-import cc.blynk.utils.properties.Placeholders;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -42,11 +41,7 @@ public class ThirdPartyMailClient implements MailClient {
 
         this.session = Session.getInstance(mailProperties);
         try {
-            String mailFrom = mailProperties.getProperty("mail.from");
-            if (mailFrom != null) {
-                mailFrom = mailFrom.replace(Placeholders.PRODUCT_NAME, productName);
-            }
-            this.from = new InternetAddress(mailFrom);
+            this.from = new InternetAddress(username);
         } catch (AddressException e) {
             throw new RuntimeException("Error initializing MailWrapper.");
         }
