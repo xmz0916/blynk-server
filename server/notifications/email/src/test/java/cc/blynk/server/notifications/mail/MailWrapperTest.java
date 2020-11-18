@@ -125,12 +125,13 @@ public class MailWrapperTest {
 
         mailWrapper.sendText(to, "Hello", "Happy Blynking!\n" +
                 "-\n" +
-                "Getting Started Guide -> https://www.blynk.cc/getting-started\n" +
-                "Documentation -> http://docs.blynk.cc/\n" +
-                "Sketch generator -> https://examples.blynk.cc/\n" +
+                "创客童年官网 -> http://www.cscktn.com/\n" +
+                "课程合作，请添加微信：toubeexu \n" + 
+                "开始学习 -> https://www.blynk.cc/getting-started\n" +
+                "学习手册 -> http://docs.blynk.cc/\n" +
+                "项目案例 -> https://examples.blynk.cc/\n" +
                 "\n" +
-                "Latest Blynk library -> https://github.com/blynkkk/blynk-library/releases/download/v0.6.1/Blynk_v0.6.1.zip\n" +
-                "Latest Blynk server -> https://github.com/blynkkk/blynk-server/releases/download/v0.18.1/server-0.18.1.jar\n" +
+                "最新版的Blynk Arduino库 -> https://github.com/blynkkk/blynk-library/releases/download/v0.6.1/Blynk_v0.6.1.zip\n" +
                 "-\n" +
                 "https://www.blynk.cc\n" +
                 "twitter.com/blynk_app\n" +
